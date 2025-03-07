@@ -1,12 +1,11 @@
 <x-app-layout>
     <x-slot name="header">
-        Fichajes
+        Control de fichajes
     </x-slot>
 
     <div class="flex flex-col justify-center items-center">
 
-        @livewire('full-calendar')
+
     </div>
 
-    @livewire('clockin-modal')
 </x-app-layout>
