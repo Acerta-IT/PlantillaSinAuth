@@ -13,7 +13,7 @@
             } else {
                 this.activeIndexes.push(index);
             }
-    
+
             // Save state to localStorage
             localStorage.setItem('activeIndexes', JSON.stringify(this.activeIndexes));
         },
@@ -52,6 +52,11 @@
                     Dashboard
                 </x-nav-link>
 
+                <x-nav-link :href="route('leaves')" :active="request()->routeIs('leaves')">
+                    <x-slot name="icon">event_busy</x-slot>
+                    Mis ausencias
+                </x-nav-link>
+
                 <!-- Dropdown 1 -->
                 {{-- @if (auth()->user()->role_enum === \App\enums\Role::Admin) --}}
                 <x-nav-dropdown dropDownId=0 icon="manage_accounts" title="Gestón de usuarios">
@@ -69,6 +74,11 @@
                     </x-nav-link>
                 </x-nav-dropdown>
                 {{-- @endif --}}
+
+                <x-nav-link :href="route('settings')" :active="request()->routeIs('settings')">
+                    <x-slot name="icon">settings</x-slot>
+                    Ajustes
+                </x-nav-link>
 
             </div>
 
@@ -166,6 +176,12 @@
                             Control de fichaje
                         </x-nav-link>
                     </x-nav-dropdown>
+
+                    <x-nav-link :href="route('settings')" :active="request()->routeIs('settings')">
+                        <x-slot name="icon">settings</x-slot>
+                        Ajustes
+                    </x-nav-link>
+
                 </div>
 
                 <!-- Botón de logout -->
