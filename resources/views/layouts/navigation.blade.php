@@ -110,7 +110,7 @@
         isActive(index) {
             return this.activeIndexes.includes(index);
         }
-    }" class="sm:hidden">
+    }" class="sm:hidden text-neutral2">
         <button @click="isOpen = !isOpen"
             class="fixed top-4 right-4 inline-flex items-center justify-center p-2 w-10 h-10 text-neutral2 rounded-lg hover:bg-secondary active:ring-2 active:ring-neutral1 focus:outline-none"
             :aria-expanded="isOpen">
@@ -139,7 +139,7 @@
             <div class="h-full overflow-y-auto p-4">
                 <div class="flex justify-center mt-8">
                     <a href="{{ route(config('app.home_route')) }}">
-                        <x-application-logo class="block h-20 fill-current text-gray-800 justify-center" />
+                        <x-application-logo class="block h-14 fill-current text-gray-800 justify-center" />
                     </a>
                 </div>
 
@@ -171,7 +171,7 @@
                 <!-- Botón de logout -->
                 <div class="mt-auto pt-4">
                     <hr class="mx-4 border-neutral1 mb-4">
-                    <a href="/logout" class="flex items-center gap-2 px-4 py-2 hover:text-neutral4">
+                    <a href="/logout" class="flex items-center gap-2 px-4 py-2  hover:text-neutral4">
                         <span class="material-symbols-outlined">logout</span>
                         Logout
                     </a>
