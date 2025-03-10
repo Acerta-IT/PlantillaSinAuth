@@ -15,6 +15,7 @@
         "vite": "^6.0.11"
     },
     "dependencies": {
+        "@dasundev/livewire-dropzone-styles": "^2.0.4",
         "flowbite": "^3.1.2"
     }
 }

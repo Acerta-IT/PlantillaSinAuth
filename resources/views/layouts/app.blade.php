@@ -32,7 +32,7 @@
                 </div>
             </header>
         @endif
-        <div class="">
+        <div class="max-w-[95%] mx-auto">
             {{ $slot }}
         </div>
     </main>
