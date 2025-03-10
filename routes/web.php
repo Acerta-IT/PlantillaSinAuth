@@ -11,9 +11,9 @@ Route::get('/users', function () {
 })->name('users');
 
 Route::get('/fichaje', function () {
-    return view('users');
+    return view('clockin.clockin');
 })->name('clockin');
 
 Route::get('/control-fichaje', function () {
-    return view('users');
+    return view('clockin.control');
 })->name('clockin-control');

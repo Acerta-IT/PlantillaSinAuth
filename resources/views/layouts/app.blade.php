@@ -19,12 +19,12 @@
     @livewireStyles
 </head>
 
-<body class="flex h-screen">
+<body class="flex flex-row h-screen">
     <livewire:toast-handler />
 
     @include('layouts.navigation')
 
-    <main class="flex-1 text-neutral4 ml-80">
+    <main class="flex-1 text-neutral4 sm:ml-80">
         @if (isset($header))
             <header class="text-3xl shadow  font-medium 2xl:pt-8">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
